@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'poppies' sans-serif;
+    color: #222;
+    padding-bottom: 50px;
+
+
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav{
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+h1 .logo{
+    width: 30px;
+    position: absolute;
+    right: 85%;
+    top: 20%;
+}
+
+.nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 7px 15px;
+    transition: all 0.3s ease-in-out;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nav.active{
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgb(0, 0, 0,0.3);
+
+}
+
+.nav.active a{
+    color: #000;
+}
+
+.nav.active .container{
+    padding:  10px 0;
+}
+
+.nav a.current,
+.nav a:hover{
+    color: #02CBFD;
+
+}
+
+.hero{
+    background-image:url(../img/IMG_7738.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: -2;
+}
+
+.hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0,0.5);
+    z-index: -1 ;
+}
+
+.hero h1{
+    font-size: 46px;
+    margin: -20px 0 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.content h2,
+.content h3{
+    font-size: 150%;
+    margin: 20px 0;
+}
+
+.content p{
+    color: #555;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+
+}
+
+.container_card{
+    max-width: 1200px;
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    width: 300px;
+    margin: 10px;
+    transition: all 300ms;
+
+}
+
+.card:hover{
+    width: 350px;
+
+}
+
+.card .cover{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.card .cover img{
+    width: 250px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 115px;
+    z-index: 1;
+    filter: drop-shadow(5px 5px 4px rgb(0,0,0,0.5));
+    transition: all 400ms;
+}
+
+.card:hover .cover img{
+    top: 112px;
+
+}
+
+.card .img_back{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    background-size: cover;
+    border-radius: 20px;
+    transition: all 300ms;
+}
+
+
+
+.card:nth-of-type(1) .img_back{
+    background-image: url(/img/fondo_celeste_by_merce_editions_d61xh9w-fullview.jpg);
+
+}
+.card:nth-of-type(2) .img_back{
+    background-image: url(/img/fondo_celeste_by_merce_editions_d61xh9w-fullview.jpg);
+    
+}
+.card:nth-of-type(3) .img_back{
+    background-image: url(/img/fondo_celeste_by_merce_editions_d61xh9w-fullview.jpg);
+    
+}
+.card:nth-of-type(4) .img_back{
+    background-image: url(/img/images.jfif);
+    
+}
+
+
+.card:hover .img_back{
+    bottom: -40px;
+}
+
+.card .description{
+    background:azure;
+    margin-top: -10px;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+    transition: all 300ms;
+
+}
+
+.card:hover{
+    padding: 40px;
+}
+
+.card .description h4{
+    margin-top: 10px;
+    
+}
+
+.card .description p{
+    margin-top: 10px;
+    
+}
+
+.card .description input{
+    padding: 10px 40px;
+    margin-top: 20px;
+    border: none;
+    background:mintcream;
+    color: black;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 300ms;
+}
+
+.card .description input:hover{
+    background:  white;
+}
+
+
+
+footer{
+    text-align: center;
+    background-color: white;
+    padding: 40px;
+}
+
+.logofooter{
+    width: 100px;
+}
+
+.copyright{
+    color: black;
+    font-size: 13px;
+    margin: 20px;
+}
