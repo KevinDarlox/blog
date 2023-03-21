@@ -83,6 +83,11 @@ h1 .logo{
 
 }
 
+.nav a.current2,
+.nav a:hover{
+    color: #02CBFD;
+
+}
 .hero{
     background-image:url(./img/IMG_7738.JPG);
     background-repeat: no-repeat;
@@ -119,6 +124,71 @@ h1 .logo{
     font-size: 20px;
     letter-spacing: 1px;
 }
+
+.hero2{
+    background-image:url(./img/5-Hobbies-To-Maximize-Your-Entrepreneurial-Drive.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 40vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: -2;
+}
+
+.hero2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0,0.5);
+    z-index: -1 ;
+}
+
+.hero2 h1{
+    font-size: 46px;
+    margin: -20px 0 20px;
+}
+
+.hero3{
+    background-image:url(./img/cdec6fae86e8884ef969c3dc03f56cc92da8bcfc.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 40vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: -2;
+}
+
+.hero3::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0,0.5);
+    z-index: -1 ;
+}
+
+.hero3 h1{
+    font-size: 46px;
+    margin: -20px 0 20px;
+}
+
 
 .content h2,
 .content h3{
@@ -202,11 +272,6 @@ h1 .logo{
     background-image: url(./img/fondo_celeste_by_merce_editions_d61xh9w-fullview.jpg);
     
 }
-.card:nth-of-type(4) .img_back{
-    background-image: url(./img/fondo_celeste_by_merce_editions_d61xh9w-fullview.jpg);
-    
-}
-
 
 .card:hover .img_back{
     bottom: -40px;
