@@ -125,6 +125,7 @@ h1 .logo{
     letter-spacing: 1px;
 }
 
+
 .hero2{
     background-image:url(./img/5-Hobbies-To-Maximize-Your-Entrepreneurial-Drive.jpg);
     background-repeat: no-repeat;
@@ -292,6 +293,7 @@ h1 .logo{
 
 .card .description h4{
     margin-top: 10px;
+    text-align: center;
     
 }
 
@@ -316,6 +318,18 @@ h1 .logo{
     background:  white;
 }
 
+.container_card .btn{
+    padding: 10px ;
+    color: #fff;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    background-color: #02CBFD;
+    display: block;
+    margin-top: 15px;
+    border-radius: 10px;
+
+}
 
 
 footer{
